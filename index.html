@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persolnal Portfolio Website - Dina Hariyanti</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f72bee4d7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/nameTag.png" class="nameTag">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>D4 Manajemen Informatika</p>
+                <h1>Halo, Saya <span>Dina Hariyanti</span><br>mahasiswa Universitas Negeri Surabaya</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Mahasiswa dari Program Studi D4 Manajemen Informatika di Universitas Negeri Surabaya dengan
+                        semangat belajar tinggi yang terfokus pada pengembangan teknologi, khususnya dalam aspek
+                        pengembangan perangkat lunak. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('courses', event)">Relevant Courses</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Mobile Development</span><br>Building Mobile apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>Semester genap 2023/2024</span><br>Desain UI/UX</li>
+                            <li><span>Semester genap 2023/2024</span><br>Pemrograman Mobile</li>
+                            <li><span>Semester genap 2023/2024</span><br>Pemrograman Web</li>
+                            <li><span>Semester gasal 2023/2024</span><br>Basis Data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Interface Design</h2>
+                    <p>Menciptakan desain yang mencerminkan identitas bisnis dengan tampilan yang menarik, intuitif,
+                        user-friendly, serta struktur antarmuka yang mudah diakses dan dipahami oleh pengguna.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End Web Development</h2>
+                    <p>Membangun antarmuka yang menarik, reponsif, dan ramah pengguna dengan fokus pada estetika dan
+                        fungsionalitas.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>Administrative IT Support</h2>
+                    <p>Memberikan dukungan administratif kepada Tim IT, termasuk penjadwalan, pelaporan, dan pengelolaan
+                        dokumen proyek.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>IT Documentation Specialist</h2>
+                    <p>Membuat dan memelihara dokumentasi teknis, panduan pengguna, atau laporan proyek IT.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Entry Specialist</h2>
+                    <p>Memasukkan data ke dalam sistem, memverifikasi informasi, dan menjaga akurasi data.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>CRM Administrator</h2>
+                    <p>Mengelola sistem CRM, membantu pengguna dengan data pelanggan, dan memberikan laporan kepada tim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project-1.PNG">
+                    <div class="layer">
+                        <h3>Website Linimasa</h3>
+                        <p>Website untuk mengabadikan momen dan perjalanan berharga dalam hidup secara pribadi.</p>
+                        <a href="https://github.com/Aviana59/PemWeb2"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-2.png">
+                    <div class="layer">
+                        <h3>Website Berita</h3>
+                        <p>Website untuk menampilkan berita dan informasi terkini. Website ini dibangun menggunakan
+                            framework laravel v10.</p>
+                        <a href="https://github.com/DinaHariyanti/laravel-berita_UAS_WebLanjut"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-3.png">
+                    <div class="layer">
+                        <h3>Desain Interface Aplikasi Pendeteksi Banjir</h3>
+                        <p>Aplikasi untuk melihat lokasi-lokasi yang terdapat banjir dan perkraan cuaca di Surabaya.</p>
+                        <a
+                            href="https://www.figma.com/design/jlyXT02Gjxdu6Z3xsUnuOc/Swimap?m=auto&t=cQRE7kFssfoT9UoC-6"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-4.png">
+                    <div class="layer">
+                        <h3>Desain Interface Aplikasi Memo</h3>
+                        <p>Aplikasi untuk membuat catatan harian dan mengingatkan pengguna tentang tugas-tugas yang
+                            harus diselesaikan.</p>
+                        <a
+                            href="https://www.figma.com/design/gqdPUpGIWDop7UvZzgVEoh/Mamemo?m=auto&t=cQRE7kFssfoT9UoC-6"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> dinahariyanti48@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0857-3672-7819</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_dinahariyanti?igsh=bDhzMXZhMDZzd3Fk"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dina-hariyanti-127290342/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/DinaHariyanti"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/CV_Dina Hariyanti.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Dina Hariyanti. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    
+    <script>
+        function opentab(tabname, event) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3twHcjTrB2iB-xilre2_7Ahj2M8pPfAS7m_gyKdV6rAX_xH8Y1WRKoS9V7dfSnIQPvA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
