@@ -185,6 +185,7 @@ nav .fa-bars, nav .fa-times {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 .project-list{
     margin-top: 50px;
@@ -194,9 +195,11 @@ nav .fa-bars, nav .fa-times {
 }
 .project img{
     width: 100%;
+    height: 200px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    margin-bottom: 15px;
 }
 .layer{
     width: 100%;
